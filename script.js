@@ -1,31 +1,8 @@
-var apikey = "SyWNBgmtyXXfWKNvrvTRvHqzK5aYVPwr";
-function getLocation() {
-  navigator.geolocation.getCurrentPosition(getcoordinates);
-}
+var apikey = "FFh0W8tDRzOVQOKuFM28HjpPunfmKGvk";
+var locationid = 0;
+var cityname = "";
 
-function getcoordinates(position) {
-  var currentlatitude = position.coords.latitude;
-  var currentlongitude = position.coords.longitude;
-  var getlocation = {
-    url:
-      "https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=" +
-      apikey +
-      "&q=" +
-      currentlatitude +
-      "%2C" +
-      currentlongitude,
-    method: "GET",
-    timeout: 0,
-    async: false,
-  };
-
-  var locationid = 0;
-
-  $.ajax(getlocation).done(function (response) {
-    var tempid = response.Key;
-    locationid = tempid;
-  });
-
+function getcurrentconditions() {
   var getcondition = {
     url:
       "https://dataservice.accuweather.com/currentconditions/v1/" +
@@ -46,7 +23,7 @@ function getcoordinates(position) {
     } else {
       IsDay = "Night";
     }
-    $("p.content-left").append(
+    $("p.content-left").html(
       CurrentWeather +
         "<br>" +
         CheckRain +
@@ -56,7 +33,8 @@ function getcoordinates(position) {
         TempInCelsius
     );
   });
-
+}
+function getforecast() {
   var getforecast = {
     url:
       "https://dataservice.accuweather.com/forecasts/v1/daily/1day/" +
@@ -90,7 +68,7 @@ function getcoordinates(position) {
     var nightweatherconditon =
       response.DailyForecasts[0].Night.PrecipitationType;
 
-    $("p.content-right").append(
+    $("p.content-right").html(
       dateStart +
         "<br>" +
         description +
@@ -99,7 +77,7 @@ function getcoordinates(position) {
         "<br>" +
         dateEnd
     );
-    $("p.content-btm").append(
+    $("p.content-btm").html(
       dailydate +
         "<br>" +
         minTempCel +
@@ -116,8 +94,77 @@ function getcoordinates(position) {
     );
   });
 }
+function getLocation() {
+  navigator.geolocation.getCurrentPosition(getcoordinates);
+}
 
+function getcoordinates(position) {
+  if (locationid == 0) {
+    var currentlatitude = position.coords.latitude;
+    var currentlongitude = position.coords.longitude;
+    var getlocation = {
+      url:
+        "https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=" +
+        apikey +
+        "&q=" +
+        currentlatitude +
+        "%2C" +
+        currentlongitude,
+      method: "GET",
+      timeout: 0,
+      async: false,
+    };
+
+    $.ajax(getlocation).done(function (response) {
+      var tempid = response.Key;
+      locationid = tempid;
+    });
+  }
+  getcurrentconditions();
+  getforecast();
+}
+
+function getcurrentdate() {
+  var date = new Date();
+  $("p.content-top").html(date);
+}
+
+function searchforcity() {
+  var searchlocation = {
+    url:
+      "https://dataservice.accuweather.com/locations/v1/cities/search?apikey=" +
+      apikey +
+      "&q=" +
+      thelocation,
+    method: "GET",
+    timeout: 0,
+  };
+
+  $.ajax(searchlocation).done(function (response) {
+    let tempid = response[0].Key;
+    locationid = tempid;
+    let tempcity = response[0].LocalizedName;
+    cityname = tempcity;
+    getLocation();
+  });
+}
+
+getcurrentdate();
 getLocation();
 
-var date = new Date();
-$("p.content-top").append(date);
+$(document).ready(function () {
+  $("#refresh-button").click(function () {
+    getcurrentdate();
+    getLocation();
+  });
+});
+
+var thelocation = "";
+document.addEventListener("submit", function (event) {
+  //prevent default action of the form from actually submitting
+  event.preventDefault();
+  var templocation = document.getElementById("location_name").value;
+  thelocation = templocation;
+
+  searchforcity();
+});
