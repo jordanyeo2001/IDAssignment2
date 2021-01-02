@@ -360,6 +360,7 @@ template {
 }
 
 .menu {
+  display: inline-block;
   background-color: #f0f8ff;
   padding: 20px;
   text-align: center;
@@ -369,10 +370,10 @@ template {
   margin: 10px;
 }
 
-.search-container button {
+.search-box button {
   float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
+  padding: 3px 10px;
+  margin-top: 0px;
   margin-right: 16px;
   background: #ddd;
   font-size: 17px;
@@ -380,6 +381,90 @@ template {
   cursor: pointer;
   float: right;
 }
-.search-container {
+.search-box {
   float: right;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.content-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.content-left1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.content-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+.centered {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#nav {
+  display: none;
+  padding: 30px;
+  font-size: 17px;
+  border: none;
+  background-color: #ff4800;
+}
+
+.menubutton {
+  background-color: #ff6600;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  max-width: 90px;
+}
+
+.dropdown-menu a {
+  color: #3333ff;
+  padding: 10px 14px;
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .content-box {
+    flex-direction: column;
+  }
+  #nav {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
 }
