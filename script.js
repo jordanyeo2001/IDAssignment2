@@ -1,4 +1,4 @@
-var apikey = "DcZrn3Qnzs3x1YPpKVlBT4H6RuMcf7Bc";
+var apikey = "SyWNBgmtyXXfWKNvrvTRvHqzK5aYVPwr";
 function getLocation() {
   navigator.geolocation.getCurrentPosition(getcoordinates);
 }
@@ -77,6 +77,19 @@ function getcoordinates(position) {
     var end_date = new Date(response.Headline.EndDate);
     var dateEnd = end_date.toDateString() + " " + end_date.toLocaleTimeString();
 
+    var dailydate = new Date(response.DailyForecasts[0].Date);
+    var dailydate =
+      dailydate.toDateString() + " " + dailydate.toLocaleTimeString();
+    var minTemp = response.DailyForecasts[0].Temperature.Minimum.Value;
+    var minTempCel = ((5 / 9) * (minTemp - 32)).toFixed(1);
+    var maxTemp = response.DailyForecasts[0].Temperature.Maximum.Value;
+    var maxTempCel = ((5 / 9) * (maxTemp - 32)).toFixed(1);
+    var dayweathertype = response.DailyForecasts[0].Day.IconPhrase;
+    var dayweatherconditon = response.DailyForecasts[0].Day.PrecipitationType;
+    var nightweathertype = response.DailyForecasts[0].Night.IconPhrase;
+    var nightweatherconditon =
+      response.DailyForecasts[0].Night.PrecipitationType;
+
     $("p.content-right").append(
       dateStart +
         "<br>" +
@@ -86,10 +99,25 @@ function getcoordinates(position) {
         "<br>" +
         dateEnd
     );
+    $("p.content-btm").append(
+      dailydate +
+        "<br>" +
+        minTempCel +
+        "<br>" +
+        maxTempCel +
+        "<br>" +
+        dayweathertype +
+        "<br>" +
+        dayweatherconditon +
+        "<br>" +
+        nightweathertype +
+        "<br>" +
+        nightweatherconditon
+    );
   });
 }
 
 getLocation();
 
 var date = new Date();
-$("p.content-left1").append(date);
+$("p.content-top").append(date);

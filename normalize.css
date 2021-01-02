@@ -398,7 +398,13 @@ template {
   flex: 50%;
 }
 
-.content-left1 {
+.content-top {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.content-btm {
   background-color: #f1f1f1;
   padding: 10px;
   flex: 50%;
