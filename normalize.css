@@ -474,7 +474,51 @@ template {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.adminlist {
+  font-size: 40px;
+  text-align: center;
+  list-style-type: none;
+  margin: 20px;
+  border: 1px solid #000;
+  padding: 20px;
+}
+#outerlist {
+  padding: 20px;
+}
 
+#CSlist {
+  display: none;
+  padding: 20px;
+}
+
+#NElist {
+  display: none;
+  padding: 20px;
+}
+
+#NWlist {
+  display: none;
+  padding: 20px;
+}
+
+#SElist {
+  display: none;
+  padding: 20px;
+}
+
+#SWlist {
+  display: none;
+  padding: 20px;
+}
+
+.locationlist {
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+}
 @media (max-width: 800px) {
   .content-box {
     flex-direction: column;

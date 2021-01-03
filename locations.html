@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Weather</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <div class="dropdown">
+          <button class="menubutton">Menu</button>
+          <div class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="locations.html">Locations</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <nav id="nav_menu">
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="locations.html">Locations</a>
+        <a class="menu" href="contact.html">Contact</a>
+        <div class="search-box">
+          <form onsubmit="location.href='index.html'">
+            Enter Location:<input
+              type="text"
+              placeholder="Search..."
+              name="search"
+              id="location_name"
+            />
+            <button type="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <ul id="outerlist">
+        <li class="adminlist" id="CS"></li>
+        <li class="adminlist" id="NE"></li>
+        <li class="adminlist" id="NW"></li>
+        <li class="adminlist" id="SE"></li>
+        <li class="adminlist" id="SW"></li>
+      </ul>
+
+      <ul id="CSlist">
+        <li
+          class="locationlist"
+          id="AMKNT"
+          onclick="location.href='index.html'"
+        >
+          Ang Mo Kio New Town
+        </li>
+        <li class="locationlist" id="BNT" onclick="location.href='index.html'">
+          Bishan New Town
+        </li>
+        <li class="locationlist" id="CG" onclick="location.href='index.html'">
+          Chinese Gardens
+        </li>
+        <li class="locationlist" id="KL" onclick="location.href='index.html'">
+          Kalang
+        </li>
+        <li class="locationlist" id="QT" onclick="location.href='index.html'">
+          Queenstown
+        </li>
+        <li class="locationlist" id="TPNT" onclick="location.href='index.html'">
+          Toa Payoh New Town
+        </li>
+        <li class="locationlist" id="TP" onclick="location.href='index.html'">
+          Tanjong Pagar
+        </li>
+        <li class="locationlist" id="YCK" onclick="location.href='index.html'">
+          Yio Chu Kang
+        </li>
+      </ul>
+
+      <ul id="NElist">
+        <li class="locationlist" id="BSWE" onclick="location.href='index.html'">
+          Bukit Sembawang Estate
+        </li>
+        <li class="locationlist" id="CK" onclick="location.href='index.html'">
+          Chia Keng
+        </li>
+        <li class="locationlist" id="HG" onclick="location.href='index.html'">
+          Hougang
+        </li>
+        <li class="locationlist" id="PSR" onclick="location.href='index.html'">
+          Pasir Ris
+        </li>
+        <li class="locationlist" id="PGG" onclick="location.href='index.html'">
+          Punggol
+        </li>
+        <li class="locationlist" id="SRG" onclick="location.href='index.html'">
+          Serangoon
+        </li>
+        <li class="locationlist" id="TPN" onclick="location.href='index.html'">
+          Tampines
+        </li>
+        <li class="locationlist" id="TS" onclick="location.href='index.html'">
+          Tai Seng
+        </li>
+      </ul>
+
+      <ul id="NWlist">
+        <li
+          class="locationlist"
+          id="BPJNT"
+          onclick="location.href='index.html'"
+        >
+          Bukit Panjang New Town
+        </li>
+        <li class="locationlist" id="BTM" onclick="location.href='index.html'">
+          Bukit Timah
+        </li>
+        <li class="locationlist" id="HLGP" onclick="location.href='index.html'">
+          Holland Grove Park
+        </li>
+        <li class="locationlist" id="RFP" onclick="location.href='index.html'">
+          Raffles Park
+        </li>
+        <li class="locationlist" id="VTRP" onclick="location.href='index.html'">
+          Victoria Park
+        </li>
+        <li class="locationlist" id="YT" onclick="location.href='index.html'">
+          Yew Tee
+        </li>
+        <li class="locationlist" id="YS" onclick="location.href='index.html'">
+          Yishun
+        </li>
+        <li class="locationlist" id="WLNT" onclick="location.href='index.html'">
+          Woodlands New Town
+        </li>
+      </ul>
+
+      <ul id="SElist">
+        <li class="locationlist" id="BDNT" onclick="location.href='index.html'">
+          Bedok New Town
+        </li>
+        <li class="locationlist" id="CIVL" onclick="location.href='index.html'">
+          Changi Village
+        </li>
+        <li class="locationlist" id="EVG" onclick="location.href='index.html'">
+          East View Gardens
+        </li>
+        <li class="locationlist" id="GLS" onclick="location.href='index.html'">
+          Geylang Serai
+        </li>
+        <li class="locationlist" id="KPUB" onclick="location.href='index.html'">
+          Kampong Ubi
+        </li>
+        <li class="locationlist" id="LH" onclick="location.href='index.html'">
+          Lucky Hills
+        </li>
+        <li class="locationlist" id="SMNT" onclick="location.href='index.html'">
+          Simei New Town
+        </li>
+        <li
+          class="locationlist"
+          id="SRGNT"
+          onclick="location.href='index.html'"
+        >
+          Serangoon New Town
+        </li>
+      </ul>
+
+      <ul id="SWlist">
+        <li class="locationlist" id="ARNT" onclick="location.href='index.html'">
+          Ayer Raja New Town
+        </li>
+        <li class="locationlist" id="BL" onclick="location.href='index.html'">
+          Boon Lay
+        </li>
+        <li class="locationlist" id="BBNT" onclick="location.href='index.html'">
+          Bukit Batok New Town
+        </li>
+        <li class="locationlist" id="BV" onclick="location.href='index.html'">
+          Buona Vista
+        </li>
+        <li class="locationlist" id="CNT" onclick="location.href='index.html'">
+          Clementi New Town
+        </li>
+        <li class="locationlist" id="CCK" onclick="location.href='index.html'">
+          Choa Chu Kang
+        </li>
+        <li class="locationlist" id="JW" onclick="location.href='index.html'">
+          Jurong West
+        </li>
+        <li class="locationlist" id="JE" onclick="location.href='index.html'">
+          Jurong East
+        </li>
+        <li class="locationlist" id="T" onclick="location.href='index.html'">
+          Tuas
+        </li>
+        <li class="locationlist" id="PSPJ" onclick="location.href='index.html'">
+          Pasir Panjang
+        </li>
+        <li class="locationlist" id="KR" onclick="location.href='index.html'">
+          Kent Ridge
+        </li>
+      </ul>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
