@@ -519,6 +519,7 @@ template {
   padding: 10px;
   border: 1px solid #000;
 }
+
 @media (max-width: 800px) {
   .content-box {
     flex-direction: column;

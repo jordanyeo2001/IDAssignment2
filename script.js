@@ -1,4 +1,4 @@
-var apikey = "acenI7CxfcKs3lyaFDr3dUOkahHnD7mB";
+var apikey = "IVSppfSrFpNYWHdNlkdeaZB7pU5Q5Gdj";
 var locationid = 0;
 var thelocation = "";
 var cityname = "";
@@ -42,14 +42,19 @@ function getcurrentconditions() {
       IsDay = "Night";
     }
     $("p.content-left").html(
-      cityname +
+      "Name: " +
+        cityname +
         "<br>" +
+        "Weather: " +
         CurrentWeather +
         "<br>" +
+        "Rain/No Rain: " +
         CheckRain +
         "<br>" +
+        "Day/Night: " +
         IsDay +
         "<br>" +
+        "Temperature: " +
         TempInCelsius
     );
     locationid = localStorage.removeItem("locationid");
@@ -90,27 +95,37 @@ function getforecast() {
       response.DailyForecasts[0].Night.PrecipitationType;
 
     $("p.content-right").html(
-      dateStart +
+      "Start date: " +
+        dateStart +
         "<br>" +
+        "Description: " +
         description +
         "<br>" +
+        "Weather: " +
         catergoryType +
         "<br>" +
+        "End date: " +
         dateEnd
     );
     $("p.content-btm").html(
       dailydate +
         "<br>" +
+        "Min Temperature: " +
         minTempCel +
         "<br>" +
+        "Max Temperature: " +
         maxTempCel +
-        "<br>" +
+        "<h4>Day Time</h4>" +
+        "Weather: " +
         dayweathertype +
         "<br>" +
+        "Rain/No Rain: " +
         dayweatherconditon +
-        "<br>" +
+        "<h4>Night Time</h4>" +
+        "Weather: " +
         nightweathertype +
         "<br>" +
+        "Rain/No Rain: " +
         nightweatherconditon
     );
   });
