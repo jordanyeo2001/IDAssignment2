@@ -1,4 +1,4 @@
-var apikey = "RVwoHwmVYFlcYL76MJYWYcl6SM8sRbui";
+var apikey = "acenI7CxfcKs3lyaFDr3dUOkahHnD7mB";
 var locationid = 0;
 var thelocation = "";
 var cityname = "";
