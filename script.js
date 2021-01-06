@@ -41,7 +41,7 @@ function getcurrentconditions() {
     } else {
       IsDay = "Night";
     }
-    $("p.content-left").html(
+    $("div.content-left").append(
       "Name: " +
         cityname +
         "<br>" +
@@ -94,7 +94,7 @@ function getforecast() {
     var nightweatherconditon =
       response.DailyForecasts[0].Night.PrecipitationType;
 
-    $("p.content-right").html(
+    $("div.content-right").append(
       "Start date: " +
         dateStart +
         "<br>" +
@@ -107,7 +107,7 @@ function getforecast() {
         "End date: " +
         dateEnd
     );
-    $("p.content-btm").html(
+    $("div.content-btm").append(
       dailydate +
         "<br>" +
         "Min Temperature: " +
@@ -165,7 +165,7 @@ function getcoordinates(position) {
 
 function getcurrentdate() {
   var date = new Date();
-  $("p.content-top").html(date);
+  $("div.content-top").html(date);
 }
 function searchforcity() {
   if (localStorage.getItem("thelocation") != null) {

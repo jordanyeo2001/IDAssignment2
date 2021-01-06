@@ -351,51 +351,10 @@ template {
 }
 
 /* Assignment2 CSS starts here */
-#nav_menu {
-  display: block;
-  padding: 30px;
-  font-size: 17px;
-  border: none;
-  background-color: #ff4800;
-}
 
-.menu {
-  display: inline-block;
-  background-color: #f0f8ff;
-  padding: 20px;
-  text-align: center;
-  margin-top: -50px;
-  flex-flow: row wrap;
-  width: 100px;
-  margin: 10px;
-}
-
-.search-box .button {
-  float: right;
-  padding: 3px 10px;
-  margin-top: 0px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  float: right;
-}
-.search-box {
-  float: right;
-}
-
-#refresh-button {
-  float: right;
+.col-sm-12 {
   padding: 10px;
-  margin-top: 30px;
-  margin-left: 2px;
-  background: #f1f1f1;
-  font-size: 17px;
-  border-color: rgb(0, 0, 0);
-  cursor: pointer;
-  float: right;
-  height: 55px;
+  background-color: #91f8ff;
 }
 .content-box {
   display: flex;
@@ -405,75 +364,38 @@ template {
 }
 
 .content-left {
-  background-color: #f1f1f1;
-  padding: 100px;
-  flex: 50%;
+  background-color: #ff0000;
+  text-align: center;
+  padding: 30px;
+  align-items: center;
 }
 
 .content-top {
-  background-color: #f1f1f1;
-  padding: 10px;
+  padding: 15px;
   flex: 50%;
+  text-align: center;
+  font-size: 30px;
 }
 
 .content-btm {
-  background-color: #f1f1f1;
-  padding: 10px;
-  flex: 50%;
+  background-color: #00ff88;
+  text-align: center;
+  padding: 30px;
+  align-items: center;
 }
 
 .content-right {
   background-color: dodgerblue;
-  padding: 10px;
-  flex: 50%;
+  text-align: center;
+  padding: 30px;
+  align-items: center;
 }
+
 .centered {
   flex-flow: row wrap;
   justify-content: center;
 }
 
-#nav {
-  display: none;
-  padding: 30px;
-  font-size: 17px;
-  border: none;
-  background-color: #ff4800;
-}
-
-.menubutton {
-  background-color: #ff6600;
-  color: #ffffff;
-  padding: 20px;
-  font-size: 20px;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  max-width: 90px;
-}
-
-.dropdown-menu a {
-  color: #3333ff;
-  padding: 10px 14px;
-  display: block;
-}
-
-.dropdown-menu {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
 .adminlist {
   font-size: 40px;
   text-align: center;
@@ -519,15 +441,5 @@ template {
   padding: 10px;
   border: 1px solid #000;
 }
-
 @media (max-width: 800px) {
-  .content-box {
-    flex-direction: column;
-  }
-  #nav {
-    display: block;
-  }
-  .menu {
-    display: none;
-  }
 }
