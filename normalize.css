@@ -415,6 +415,22 @@ template {
   border: 1px solid #000;
   padding: 20px;
 }
+.central {
+  background-color: rgb(251, 255, 0);
+}
+.northeast {
+  background-color: rgb(44, 104, 172);
+}
+.northwest {
+  background-color: rgb(255, 0, 0);
+}
+.southeast {
+  background-color: rgb(0, 17, 255);
+}
+.southwest {
+  background-color: rgb(0, 197, 115);
+}
+
 #outerlist {
   padding: 20px;
 }
@@ -451,6 +467,7 @@ template {
   margin: 20px;
   padding: 10px;
   border: 1px solid #000;
+  background-color: rgb(220, 255, 210);
 }
 #indexmobile {
   display: none;
