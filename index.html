@@ -12,9 +12,9 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">GetWeather</a>
         <button
           class="navbar-toggler"
@@ -75,14 +75,21 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-6 content-left"><h2>Current Conditions</h2></div>
-          <div class="col-sm-6 content-right">
+          <div class="col-sm-6 heading"><h2>Current Conditions</h2></div>
+          <div class="col-sm-6 heading border-left border-dark">
             <h2>1 Day Forecast</h2>
           </div>
         </div>
 
         <div class="row">
-          <div class="col content-btm"><h2>Daily Forecast</h2></div>
+          <div class="col-sm-6 content-left"></div>
+          <div class="col-sm-6 content-right border-left border-dark"></div>
+        </div>
+        <div class="row">
+          <div class="col heading"><h2>Daily Forecast</h2></div>
+        </div>
+        <div class="row">
+          <div class="col content-btm"></div>
         </div>
       </div>
     </section>

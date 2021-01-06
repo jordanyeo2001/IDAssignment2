@@ -351,7 +351,9 @@ template {
 }
 
 /* Assignment2 CSS starts here */
-
+.bg {
+  background-color: #00ff88;
+}
 .col-sm-12 {
   padding: 10px;
   background-color: #91f8ff;
@@ -364,14 +366,14 @@ template {
 }
 
 .content-left {
-  background-color: #ff0000;
+  background-color: #00ff88;
   text-align: center;
   padding: 30px;
   align-items: center;
 }
 
 .content-top {
-  padding: 15px;
+  padding: 10px;
   flex: 50%;
   text-align: center;
   font-size: 30px;
@@ -385,6 +387,12 @@ template {
 }
 
 .content-right {
+  background-color: #00ff88;
+  text-align: center;
+  padding: 30px;
+  align-items: center;
+}
+.heading {
   background-color: dodgerblue;
   text-align: center;
   padding: 30px;
