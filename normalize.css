@@ -354,9 +354,12 @@ template {
 .bg {
   background-color: #00ff88;
 }
+.bg1 {
+  background-color: #00eeff;
+}
 .col-sm-12 {
   padding: 10px;
-  background-color: #91f8ff;
+  background-color: #00eeff;
 }
 .content-box {
   display: flex;
@@ -368,7 +371,7 @@ template {
 .content-left {
   background-color: #00ff88;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   align-items: center;
 }
 
@@ -382,20 +385,20 @@ template {
 .content-btm {
   background-color: #00ff88;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   align-items: center;
 }
 
 .content-right {
   background-color: #00ff88;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   align-items: center;
 }
 .heading {
   background-color: dodgerblue;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   align-items: center;
 }
 
@@ -449,5 +452,14 @@ template {
   padding: 10px;
   border: 1px solid #000;
 }
-@media (max-width: 800px) {
+#indexmobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  #indexmobile {
+    display: block;
+  }
+  #indexdesktop {
+    display: none;
+  }
 }
