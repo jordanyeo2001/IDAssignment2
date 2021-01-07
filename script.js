@@ -1,4 +1,4 @@
-var apikey = "At6GvrBpAByGzxWErc00G19A8LCNwdpK";
+var apikey = "0xC4yiCcocNcgWIF4xnxnh3OL7ybQerP";
 var locationid = 0;
 var thelocation = "";
 var cityname = "";
@@ -55,7 +55,8 @@ function getcurrentconditions() {
         IsDay +
         "<br>" +
         "Temperature: " +
-        TempInCelsius
+        TempInCelsius +
+        "°"
     );
     getactivity();
     locationid = localStorage.removeItem("locationid");
@@ -113,9 +114,11 @@ function getforecast() {
         "<br>" +
         "Min Temperature: " +
         minTempCel +
+        "°" +
         "<br>" +
         "Max Temperature: " +
         maxTempCel +
+        "°" +
         "<br>" +
         "<br>" +
         "<h4>Day Time</h4>" +
