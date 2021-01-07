@@ -1,4 +1,4 @@
-var apikey = "tnhvfU9OIY1teX1ibWfLTLADZ1G5fggu";
+var apikey = "L2HA607JJYaSDaMhVcs0vNLAJJJVSW30";
 var locationid = 0;
 var thelocation = "";
 var cityname = "";
@@ -215,7 +215,190 @@ $.ajax(getadminlocation).done(function (response) {
   $("#SE").html(x4);
   $("#SW").html(x5);
 });
+getactivity();
+function getactivity() {
+  var getactivityforecast = {
+    url:
+      "https://dataservice.accuweather.com/indices/v1/daily/1day/1603557/groups/01?apikey=L2HA607JJYaSDaMhVcs0vNLAJJJVSW30",
+    method: "GET",
+    timeout: 0,
+  };
 
+  $.ajax(getactivityforecast).done(function (response) {
+    var flightname = response[0].Name;
+    var flightdate = new Date(response[0].LocalDateTime);
+    var flightdate =
+      flightdate.toDateString() + " " + flightdate.toLocaleTimeString();
+    var flightvalue = response[0].Value;
+    var flightstatus = response[0].Category;
+
+    var indoorname = response[1].Name;
+    var indoordate = new Date(response[1].LocalDateTime);
+    var indoordate =
+      indoordate.toDateString() + " " + indoordate.toLocaleTimeString();
+    var indoorvalue = response[1].Value;
+    var indoorstatus = response[1].Category;
+
+    var runningname = response[2].Name;
+    var runningdate = new Date(response[2].LocalDateTime);
+    var runningdate =
+      runningdate.toDateString() + " " + runningdate.toLocaleTimeString();
+    var runningvalue = response[2].Value;
+    var runningstatus = response[2].Category;
+
+    var joggingname = response[3].Name;
+    var joggingdate = new Date(response[3].LocalDateTime);
+    var joggingdate =
+      joggingdate.toDateString() + " " + joggingdate.toLocaleTimeString();
+    var joggingvalue = response[3].Value;
+    var joggingstatus = response[3].Category;
+
+    var hikingname = response[4].Name;
+    var hikingdate = new Date(response[4].LocalDateTime);
+    var hikingdate =
+      hikingdate.toDateString() + " " + hikingdate.toLocaleTimeString();
+    var hikingvalue = response[4].Value;
+    var hikingstatus = response[4].Category;
+
+    var bicyclingname = response[5].Name;
+    var bicyclingdate = new Date(response[5].LocalDateTime);
+    var bicyclingdate =
+      bicyclingdate.toDateString() + " " + bicyclingdate.toLocaleTimeString();
+    var bicyclingvalue = response[5].Value;
+    var bicyclingstatus = response[5].Category;
+
+    var golfname = response[6].Name;
+    var golfdate = new Date(response[6].LocalDateTime);
+    var golfdate =
+      golfdate.toDateString() + " " + golfdate.toLocaleTimeString();
+    var golfvalue = response[6].Value;
+    var golfstatus = response[6].Category;
+
+    var tennisname = response[7].Name;
+    var tennisdate = new Date(response[7].LocalDateTime);
+    var tennisdate =
+      tennisdate.toDateString() + " " + tennisdate.toLocaleTimeString();
+    var tennisvalue = response[7].Value;
+    var tennisstatus = response[7].Category;
+
+    var beachpoolname = response[11].Name;
+    var beachpooldate = new Date(response[11].LocalDateTime);
+    var beachpooldate =
+      beachpooldate.toDateString() + " " + beachpooldate.toLocaleTimeString();
+    var beachpoolvalue = response[11].Value;
+    var beachpoolstatus = response[11].Category;
+
+    $("div.flight").html(
+      "Date: " +
+        flightdate +
+        "<br>" +
+        "Value: " +
+        flightvalue +
+        "<br>" +
+        "Status: " +
+        flightstatus
+    );
+    $("h3.flightname").html(flightname);
+
+    $("div.indoor").html(
+      "Date: " +
+        indoordate +
+        "<br>" +
+        "Value: " +
+        indoorvalue +
+        "<br>" +
+        "Status: " +
+        indoorstatus
+    );
+    $("h3.indoorname").html(indoorname);
+
+    $("div.running").html(
+      "Date: " +
+        runningdate +
+        "<br>" +
+        "Value: " +
+        runningvalue +
+        "<br>" +
+        "Status: " +
+        runningstatus
+    );
+    $("h3.runningname").html(runningname);
+
+    $("div.jogging").html(
+      "Date: " +
+        joggingdate +
+        "<br>" +
+        "Value: " +
+        joggingvalue +
+        "<br>" +
+        "Status: " +
+        joggingstatus
+    );
+    $("h3.joggingname").html(joggingname);
+
+    $("div.hiking").html(
+      "Date: " +
+        hikingdate +
+        "<br>" +
+        "Value: " +
+        hikingvalue +
+        "<br>" +
+        "Status: " +
+        hikingstatus
+    );
+    $("h3.hikingname").html(hikingname);
+
+    $("div.bicycling").html(
+      "Date: " +
+        bicyclingdate +
+        "<br>" +
+        "Value: " +
+        bicyclingvalue +
+        "<br>" +
+        "Status: " +
+        bicyclingstatus
+    );
+    $("h3.bicyclingname").html(bicyclingname);
+
+    $("div.golf").html(
+      "Date: " +
+        golfdate +
+        "<br>" +
+        "Value: " +
+        golfvalue +
+        "<br>" +
+        "Status: " +
+        golfstatus
+    );
+    $("h3.golfname").html(golfname);
+
+    $("div.tennis").html(
+      "Date: " +
+        tennisdate +
+        "<br>" +
+        "Value: " +
+        tennisvalue +
+        "<br>" +
+        "Status: " +
+        tennisstatus
+    );
+    $("h3.tennisname").html(tennisname);
+
+    $("div.beachpool").html(
+      "Date: " +
+        beachpooldate +
+        "<br>" +
+        "Value: " +
+        beachpoolvalue +
+        "<br>" +
+        "Status: " +
+        beachpoolstatus
+    );
+    $("h3.beachpoolname").html(beachpoolname);
+  });
+}
+
+// Click functions
 $(document).ready(function () {
   $("#refresh-button").click(function () {
     getcurrentdate();
