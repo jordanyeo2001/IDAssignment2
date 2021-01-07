@@ -1,4 +1,4 @@
-var apikey = "L2HA607JJYaSDaMhVcs0vNLAJJJVSW30";
+var apikey = "At6GvrBpAByGzxWErc00G19A8LCNwdpK";
 var locationid = 0;
 var thelocation = "";
 var cityname = "";
@@ -57,6 +57,7 @@ function getcurrentconditions() {
         "Temperature: " +
         TempInCelsius
     );
+    getactivity();
     locationid = localStorage.removeItem("locationid");
   });
 }
@@ -194,6 +195,27 @@ function searchforcity() {
   });
 }
 
+function searchforcity2() {
+  if (localStorage.getItem("thelocation") != null) {
+    thelocation = localStorage.getItem("thelocation");
+  }
+  var searchlocation = {
+    url:
+      "https://dataservice.accuweather.com/locations/v1/cities/search?apikey=" +
+      apikey +
+      "&q=" +
+      thelocation,
+    method: "GET",
+    timeout: 0,
+  };
+
+  $.ajax(searchlocation).done(function (response) {
+    let tempid = response[0].Key;
+    locationid = tempid;
+    localStorage.setItem("locationid", locationid);
+  });
+}
+
 var getadminlocation = {
   url:
     "https://dataservice.accuweather.com/locations/v1/adminareas/SG?apikey=" +
@@ -215,11 +237,14 @@ $.ajax(getadminlocation).done(function (response) {
   $("#SE").html(x4);
   $("#SW").html(x5);
 });
-getactivity();
+
 function getactivity() {
   var getactivityforecast = {
     url:
-      "https://dataservice.accuweather.com/indices/v1/daily/1day/1603557/groups/01?apikey=L2HA607JJYaSDaMhVcs0vNLAJJJVSW30",
+      "https://dataservice.accuweather.com/indices/v1/daily/1day/" +
+      locationid +
+      "/groups/01?apikey=" +
+      apikey,
     method: "GET",
     timeout: 0,
   };
@@ -711,6 +736,13 @@ $(document).ready(function () {
     thelocation = document.getElementById("KR").innerHTML;
     localStorage.setItem("thelocation", thelocation);
     searchforcity();
+  });
+});
+
+$(document).ready(function () {
+  $("activitysearch").click(function () {
+    getactivity();
+    searchforcity2();
   });
 });
 

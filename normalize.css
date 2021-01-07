@@ -354,6 +354,12 @@ template {
 .formbtn {
   margin-top: 20px;
 }
+.activityspace {
+  padding: 10px;
+}
+.activityspace2 {
+  padding: 20px;
+}
 .bg {
   background-color: #00ff88;
 }
@@ -399,7 +405,7 @@ template {
   align-items: center;
 }
 .heading {
-  background-color: dodgerblue;
+  background-color: rgb(30, 144, 255);
   text-align: center;
   padding: 10px;
   align-items: center;
