@@ -481,11 +481,25 @@ template {
 #indexmobile {
   display: none;
 }
+
+#activitymobile {
+  display: none;
+}
+
 @media (max-width: 576px) {
   #indexmobile {
     display: block;
   }
   #indexdesktop {
+    display: none;
+  }
+}
+
+@media (max-width: 434px) {
+  #activitymobile {
+    display: block;
+  }
+  #activitydesktop {
     display: none;
   }
 }
