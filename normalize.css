@@ -351,6 +351,9 @@ template {
 }
 
 /* Assignment2 CSS starts here */
+.formbtn {
+  margin-top: 20px;
+}
 .bg {
   background-color: #00ff88;
 }

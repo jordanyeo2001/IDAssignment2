@@ -44,16 +44,11 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
           </ul>
-          <form onsubmit="location.href='index.html'" class="form-inline my-2 my-lg-0">
+          <form
+            onsubmit="location.href='index.html'"
+            class="form-inline my-2 my-lg-0"
+          >
             <input
               class="form-control mr-sm-2"
               type="search"
@@ -68,7 +63,65 @@
         </div>
       </nav>
     </header>
-    <section></section>
+    <section class="container-fluid">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+          <input
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="abc@email.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >Rate the weather application services from 1 to 5. (1-lowest,
+            5-highest)</label
+          >
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2"
+            >Which weather services you find useful?</label
+          >
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1 Day Forecast</option>
+            <option>Activities Forecast</option>
+            <option>Current Conditions</option>
+            <option>Daily Forecast</option>
+            <option>Locations (location based on region)</option>
+            <option>Search bar (search for specific locaiton)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"
+            >Any comments? (e.g. any issues with the weather services,
+            etc)</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+          <input class="btn btn-primary formbtn" type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
