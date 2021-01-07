@@ -64,7 +64,7 @@
       </nav>
     </header>
     <section class="container-fluid">
-      <form>
+      <form role="form" onsubmit="formsubmit()">
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
           <input
@@ -73,16 +73,17 @@
             placeholder="Enter your name"
           />
         </div>
-        <div class="form-group">
+        <div class="form-group needs-validation">
           <label for="exampleFormControlInput1">Email address</label>
           <input
             type="email"
             class="form-control"
             id="exampleFormControlInput1"
             placeholder="abc@email.com"
+            required
           />
         </div>
-        <div class="form-group">
+        <div class="form-group needs-validation">
           <label for="exampleFormControlSelect1"
             >Rate the weather application services from 1 to 5. (1-lowest,
             5-highest)</label

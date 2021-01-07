@@ -531,10 +531,14 @@ $(document).ready(function () {
   });
 });
 
+function formsubmit() {
+  alert(
+    "You have successfully submitted the form. Thank you for contacting us."
+  );
+}
 document.addEventListener("submit", function (event) {
   //prevent default action of the form from actually submitting
   event.preventDefault();
-
   var templocation = document.getElementById("location_name").value;
   thelocation = templocation;
   searchforcity();
