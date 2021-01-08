@@ -489,6 +489,14 @@ template {
   display: none;
 }
 
+.iconanimation {
+  height: 40px;
+  transition: height 1s;
+}
+.iconanimation:hover {
+  height: 10px;
+  background: red;
+}
 @media (max-width: 576px) {
   #indexmobile {
     display: block;
