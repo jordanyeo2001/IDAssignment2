@@ -482,6 +482,9 @@ template {
   display: none;
 }
 
+.floatleft {
+  float: left;
+}
 #activitymobile {
   display: none;
 }

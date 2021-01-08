@@ -1,8 +1,7 @@
-var apikey = "LBQYDPVjvwpO49GHnTZOQrhWsvW2LTW7";
+var apikey = "xGtmGVHQULG3ustIhZ2iHb2xUbpPaVcc";
 var locationid = 0;
 var thelocation = "";
 var cityname = "";
-
 function getcityname() {
   var getcityname = {
     url:
@@ -36,6 +35,9 @@ function getcurrentconditions() {
     var CheckRain = response[0].PrecipitationType;
     var IsDay = response[0].IsDayTime;
     var TempInCelsius = response[0].Temperature.Metric.Value;
+    var weathericon = response[0].WeatherIcon;
+    $(".weatherimg").attr("src", "img/" + weathericon + "-s.png");
+    getactivity();
     if (IsDay == true) {
       IsDay = "Day";
     } else {
@@ -58,7 +60,24 @@ function getcurrentconditions() {
         TempInCelsius +
         "°"
     );
-    getactivity();
+    $("div.content-left").html(
+      "Name: " +
+        cityname +
+        "<br>" +
+        "Weather: " +
+        CurrentWeather +
+        "<br>" +
+        "Rain/No Rain: " +
+        CheckRain +
+        "<br>" +
+        "Day/Night: " +
+        IsDay +
+        "<br>" +
+        "Temperature: " +
+        TempInCelsius +
+        "°"
+    );
+
     locationid = localStorage.removeItem("locationid");
   });
 }
@@ -79,6 +98,7 @@ function getforecast() {
       start_date.toDateString() + " " + start_date.toLocaleTimeString();
     var description = response.Headline.Text;
     var catergoryType = response.Headline.Category;
+
     catergoryType = catergoryType[0].toUpperCase() + catergoryType.substring(1);
     var end_date = new Date(response.Headline.EndDate);
     var dateEnd = end_date.toDateString() + " " + end_date.toLocaleTimeString();
@@ -109,6 +129,11 @@ function getforecast() {
         "End date: " +
         dateEnd
     );
+
+    var weathericon3 = response.DailyForecasts[0].Day.Icon;
+    $(".weatherimg2").attr("src", "img/" + weathericon3 + "-s.png");
+    var weathericon4 = response.DailyForecasts[0].Night.Icon;
+    $(".weatherimg3").attr("src", "img/" + weathericon4 + "-s.png");
     $("div.content-btm").html(
       dailydate +
         "<br>" +
