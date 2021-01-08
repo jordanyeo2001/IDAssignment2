@@ -497,6 +497,26 @@ template {
   height: 10px;
   background: red;
 }
+.icontest {
+  position: relative;
+  animation: test 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes test {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 5px;
+    top: 2.5px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
 @media (max-width: 576px) {
   #indexmobile {
     display: block;
