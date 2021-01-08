@@ -491,7 +491,7 @@ template {
 
 .iconanimation {
   height: 40px;
-  transition: height 1s;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 .iconanimation:hover {
   height: 10px;
