@@ -1,30 +1,30 @@
 # IDAssignment2
 
-<h2>Weather Conditions</h2>
+<h1>Weather Conditions</h1>
 For this project, i have chosen to do a weather condition website. This website will allow users to get the weather conditions of any location in Singapore. Users can either use their current location or enter a specific location. Furthermore, users can also get forecast of a location.
 <br>
-<h2>Design Process</h2> 
+Github Page - https://jordanyeo2001.github.io/IDAssignment2/
+<br>
+<h1>Design Process</h1> 
 This website is cater for people who want to know more about the weather conditions.
 
 As an user, I want to know the weather condition of the day at a specific location throughout the day.
 
-As a person who want to build up my portfolio, I want to add my achivement, skillset, work experienced, education history and etc
-so that I will be able to show my portfolio to employers when finding a job. This will ensure that It is easy for employers to 
-know what are my past achivements and work experienced.
+As a person who want to organized an event with my friends, I want to get the latest weather information so that I will be able to plan my activities and make sure that everything goes well.
 
 All in all, this website I have created is design to make it easier for people to find information of the weather easily.
 
 Wireframe Created - https://xd.adobe.com/view/efe3a48e-a2da-489a-8694-d552fae8615c-bab0/
 
 
-Features
-Existing Features
+<h1>Features</h1>
+<h2>Existing Features</h2>
 
-Current Weather Conditions
+<h3>Current Weather Conditions</h3>
 
-Specific Location Weather
+<h3>Specific Location Weather</h3>
 
-Features Left to Implement
+<h2>Features Left to Implement</h2>
 
 
 <h2>Technologies Used</h2>
@@ -45,10 +45,10 @@ The project uses JQuery and Javascript to simplify the DOM manipulation.
 
 
 
-Testing
+<h2>Testing</h2>
 
 
-The Website uses a responsive contents/page.
+<h3>The Website uses a responsive contents/page.</h3>
 When using a mobile device such as IphoneX, the screensize will be resize depending on the device size.
 With different browser or devices used, the content of the page will adjust accordingly.
 
