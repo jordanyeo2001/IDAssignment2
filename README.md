@@ -1,10 +1,9 @@
 # IDAssignment2
 
-<h3>Weather Conditions</h3>
+<h2>Weather Conditions</h2>
 For this project, i have chosen to do a weather condition website. This website will allow users to get the weather conditions of any location in Singapore. Users can either use their current location or enter a specific location. Furthermore, users can also get forecast of a location.
-
-
-Design Process 
+<br>
+<h2>Design Process</h2> 
 This website is cater for people who want to know more about the weather conditions.
 
 As an user, I want to know the weather condition of the day at a specific location throughout the day.
@@ -28,10 +27,14 @@ Specific Location Weather
 Features Left to Implement
 
 
-Technologies Used
+<h2>Technologies Used</h2>
+<br>
 <a href="https://www.w3schools.com/html/">HTML - W3Schools</a>
+<br>
 <a href="https://www.w3schools.com/css/">CSS - W3Schools</a>
+<br>
 <a href="https://www.javascript.com/">Javascript</a>
+<br>
 <a href="https://jquery.com/">Jquery</a>
 <br>
 The project uses HTML to get the general layout of the website.
