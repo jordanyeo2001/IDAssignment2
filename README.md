@@ -20,25 +20,47 @@ Wireframe Created - https://xd.adobe.com/view/efe3a48e-a2da-489a-8694-d552fae861
 <h1>Features</h1>
 <h2>Existing Features</h2>
 
-<h3>Current Weather Conditions</h3>
+<h3>Feature 1 - Automatic ask user to turn on location</h3>
+Everytime the user enters the website, it will prompt the user an alert to turn on location.
 
-<h3>Specific Location Weather</h3>
+<h3>Feature 2 - Responsive Website</h3>
+This allows the website to align the contents properly depending on the user device screen size.
+
+<h3>Feature 3 - Current Weather Conditions</h3>
+This allow the user to get the current weather conditions of their location.
+
+<h3>Feature 4 - Specific Location Weather</h3>
+This feature allow the user to choose a location based on the region.
+
+<h3>Feature 5 - Weather condition status of daily activities</h3>
+This feature allow the user to see the status of each activity at the location of their choice. This means that the feature can tell the user on the weather condition of that particular activity at the location.
+
+<h3>Feature 6 - Contact form</h3>
+In the website, I have included a contact page where there will be a contact form to contact me for an enquiries.
+
+<h3>Feature 7 - Weather Icon animation</h3>
+This feature is to show a small animation of the current weather condition at the location.
+
+<h3>Feature 8 - Navbar Animation</h3>
+This feature is to show a small animation of the button the user is hovering.
 
 <h2>Features Left to Implement</h2>
 
 
 <h2>Technologies Used</h2>
-<a href="https://www.w3schools.com/html/">HTML - W3Schools</a>
+<a href="https://html.com/">HTML</a>
 <br>
-<a href="https://www.w3schools.com/css/">CSS - W3Schools</a>
+<a href="https://www.w3.org/Style/CSS/">CSS</a>
 <br>
 <a href="https://www.javascript.com/">Javascript</a>
 <br>
 <a href="https://jquery.com/">Jquery</a>
 <br>
+<a href="https://getbootstrap.com/">Bootstrap</a>
+<br>
 The project uses HTML to get the general layout of the website.
 <br>
-The project uses CSS to make the website efficent and aesthetically pleasing to the user.
+The project uses Bootstrap and CSS to make the website efficent and aesthetically pleasing to the user such as the Navbar, container, search bar,etc.
 <br>
 The project uses JQuery and Javascript to simplify the DOM manipulation.
 
@@ -50,21 +72,33 @@ The project uses JQuery and Javascript to simplify the DOM manipulation.
 <h3>The Website uses a responsive contents/page.</h3>
 When using a mobile device such as IphoneX, the screensize will be resize depending on the device size.
 With different browser or devices used, the content of the page will adjust accordingly.
+<br>
+(Website works with all device mode in Chrome DevTools.)
+(Website works with a physical Iphone 11 phone)
 
+<h3>Navigation Bar</h3>
+When click on one of the button, it will redirect you to another page such as home, locations,activities and contact page.
+<br>
+When hovering on a button in the navbar, it will highlight it.
+<br>
+There is a search bar at the right and when a location is entered and the search button is click it will show the results of the data in the specific page you search on.
+<br>
+Furthermore, for mobile version, it wil show a dropdown menu with all the buttons and the search bar instead.
 
-Navigation Menu
-When click on one of the button, it will redirect you to another page such as home, aboutme, and contact page.
-Furthermore, for mobile version, it wil show a dropdown menu instead.
-
-Form was able to submit even without filling in any details. (Solved)
+<h4>Problems discovered during testing</h4>    
 Form was not able to send to my email.
-The contents of the website only works on desktop screensize and not mobile devices.(Solved)
-Difficulties in positoning the contents properly.(Solved)
+Trouble linking the search bar with api and showing the data on the website.(Solved)
+Unable to link different api together. (Solved)
 
 
 
-Credits
 
+<h2>Credits</h2>
 
+<h3>Content</h3>
+I have used <a href="https://developer.accuweather.com/apis">Accuweather Api</a> to get the real time weather data.
+
+<h3>Media</h3>
+The photos used for the weather icon is obtained from <a href="https://apidev.accuweather.com/developers/weatherIcons">Accuweather</a>.
 
 
