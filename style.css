@@ -179,7 +179,10 @@
     top: 0px;
   }
 }
-
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 @media (max-width: 576px) {
   #indexmobile {
     display: block;
