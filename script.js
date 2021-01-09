@@ -1,4 +1,4 @@
-var apikey = "Z1r5wGaG23EJ4FxhCii85by8knEwWbKx";
+var apikey = "OMQB06m2XHHZMdAlQ36dACnABfxA1zt6";
 var locationid = 0;
 var thelocation = "";
 var cityname = "";
@@ -103,9 +103,8 @@ function getforecast() {
     var end_date = new Date(response.Headline.EndDate);
     var dateEnd = end_date.toDateString() + " " + end_date.toLocaleTimeString();
 
-    var dailydate = new Date(response.DailyForecasts[0].Date);
-    var dailydate =
-      dailydate.toDateString() + " " + dailydate.toLocaleTimeString();
+    var thedate = new Date(response.DailyForecasts[0].Date);
+    var dailydate = thedate.toDateString() + " " + thedate.toLocaleTimeString();
     var minTemp = response.DailyForecasts[0].Temperature.Minimum.Value;
     var minTempCel = ((5 / 9) * (minTemp - 32)).toFixed(1);
     var maxTemp = response.DailyForecasts[0].Temperature.Maximum.Value;
@@ -215,7 +214,7 @@ function searchforcity() {
   };
 
   $.ajax(searchlocation).done(function (response) {
-    let tempid = response[0].Key;
+    var tempid = response[0].Key;
     locationid = tempid;
     localStorage.setItem("locationid", locationid);
 
@@ -238,7 +237,7 @@ function searchforcity2() {
   };
 
   $.ajax(searchlocation).done(function (response) {
-    let tempid = response[0].Key;
+    var tempid = response[0].Key;
     locationid = tempid;
     localStorage.setItem("locationid", locationid);
   });
@@ -279,65 +278,65 @@ function getactivity() {
 
   $.ajax(getactivityforecast).done(function (response) {
     var flightname = response[0].Name;
-    var flightdate = new Date(response[0].LocalDateTime);
+    var flightdate1 = new Date(response[0].LocalDateTime);
     var flightdate =
-      flightdate.toDateString() + " " + flightdate.toLocaleTimeString();
+      flightdate1.toDateString() + " " + flightdate1.toLocaleTimeString();
     var flightvalue = response[0].Value;
     var flightstatus = response[0].Category;
 
     var indoorname = response[1].Name;
-    var indoordate = new Date(response[1].LocalDateTime);
+    var indoordate1 = new Date(response[1].LocalDateTime);
     var indoordate =
-      indoordate.toDateString() + " " + indoordate.toLocaleTimeString();
+      indoordate1.toDateString() + " " + indoordate1.toLocaleTimeString();
     var indoorvalue = response[1].Value;
     var indoorstatus = response[1].Category;
 
     var runningname = response[2].Name;
-    var runningdate = new Date(response[2].LocalDateTime);
+    var runningdate1 = new Date(response[2].LocalDateTime);
     var runningdate =
-      runningdate.toDateString() + " " + runningdate.toLocaleTimeString();
+      runningdate1.toDateString() + " " + runningdate1.toLocaleTimeString();
     var runningvalue = response[2].Value;
     var runningstatus = response[2].Category;
 
     var joggingname = response[3].Name;
-    var joggingdate = new Date(response[3].LocalDateTime);
+    var joggingdate1 = new Date(response[3].LocalDateTime);
     var joggingdate =
-      joggingdate.toDateString() + " " + joggingdate.toLocaleTimeString();
+      joggingdate1.toDateString() + " " + joggingdate1.toLocaleTimeString();
     var joggingvalue = response[3].Value;
     var joggingstatus = response[3].Category;
 
     var hikingname = response[4].Name;
-    var hikingdate = new Date(response[4].LocalDateTime);
+    var hikingdate1 = new Date(response[4].LocalDateTime);
     var hikingdate =
-      hikingdate.toDateString() + " " + hikingdate.toLocaleTimeString();
+      hikingdate1.toDateString() + " " + hikingdate1.toLocaleTimeString();
     var hikingvalue = response[4].Value;
     var hikingstatus = response[4].Category;
 
     var bicyclingname = response[5].Name;
-    var bicyclingdate = new Date(response[5].LocalDateTime);
+    var bicyclingdate1 = new Date(response[5].LocalDateTime);
     var bicyclingdate =
-      bicyclingdate.toDateString() + " " + bicyclingdate.toLocaleTimeString();
+      bicyclingdate1.toDateString() + " " + bicyclingdate1.toLocaleTimeString();
     var bicyclingvalue = response[5].Value;
     var bicyclingstatus = response[5].Category;
 
     var golfname = response[6].Name;
-    var golfdate = new Date(response[6].LocalDateTime);
+    var golfdate1 = new Date(response[6].LocalDateTime);
     var golfdate =
-      golfdate.toDateString() + " " + golfdate.toLocaleTimeString();
+      golfdate1.toDateString() + " " + golfdate1.toLocaleTimeString();
     var golfvalue = response[6].Value;
     var golfstatus = response[6].Category;
 
     var tennisname = response[7].Name;
-    var tennisdate = new Date(response[7].LocalDateTime);
+    var tennisdate1 = new Date(response[7].LocalDateTime);
     var tennisdate =
-      tennisdate.toDateString() + " " + tennisdate.toLocaleTimeString();
+      tennisdate1.toDateString() + " " + tennisdate1.toLocaleTimeString();
     var tennisvalue = response[7].Value;
     var tennisstatus = response[7].Category;
 
     var beachpoolname = response[11].Name;
-    var beachpooldate = new Date(response[11].LocalDateTime);
+    var beachpooldate1 = new Date(response[11].LocalDateTime);
     var beachpooldate =
-      beachpooldate.toDateString() + " " + beachpooldate.toLocaleTimeString();
+      beachpooldate1.toDateString() + " " + beachpooldate1.toLocaleTimeString();
     var beachpoolvalue = response[11].Value;
     var beachpoolstatus = response[11].Category;
 
