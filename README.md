@@ -1,7 +1,7 @@
 # IDAssignment2
-
+***Note*** This app uses an limited trial api from Accuweather. If no data is shown on the website, it means that the api have exceeded its limit. In order for it to work again, the api key have to be renew and change.
 <h1>Weather Conditions</h1>
-For this project, i have chosen to do a weather condition website. This website will allow users to get the weather conditions of any location in Singapore. Users can either use their current location or enter a specific location. Furthermore, users can also get forecast of a location.
+For this project, i have chosen to do a weather condition website. This website will allow users to get the weather conditions of any location in Singapore. Users can either use their current location or enter a specific location. Furthermore, users can also get a 1 day forecast of a location and the weather condition of a location for an activity.
 <br>
 Github Page - https://jordanyeo2001.github.io/IDAssignment2/
 <br>
@@ -45,7 +45,8 @@ This feature is to show a small animation of the current weather condition at th
 This feature is to show a small animation of the button the user is hovering.
 
 <h2>Features Left to Implement</h2>
-
+A form that send information to email.
+Background image change based on the weather.
 
 <h2>Technologies Used</h2>
 <a href="https://html.com/">HTML</a>
@@ -74,6 +75,7 @@ When using a mobile device such as IphoneX, the screensize will be resize depend
 With different browser or devices used, the content of the page will adjust accordingly.
 <br>
 (Website works with all device mode in Chrome DevTools.)
+<br>
 (Website works with a physical Iphone 11 phone)
 
 <h3>Navigation Bar</h3>
@@ -87,7 +89,9 @@ Furthermore, for mobile version, it wil show a dropdown menu with all the button
 
 <h4>Problems discovered during testing</h4>    
 Form was not able to send to my email.
+<br>
 Trouble linking the search bar with api and showing the data on the website.(Solved)
+<br>
 Unable to link different api together. (Solved)
 
 
