@@ -69,7 +69,7 @@
         For any enquiries, send an email to unknownweather@gmail.com or use the
         form below.
       </p>
-      <form role="form" onsubmit="formsubmit()">
+      <form onsubmit="formsubmit()">
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
           <input
@@ -83,7 +83,7 @@
           <input
             type="email"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="exampleFormControlInput2"
             placeholder="abc@email.com"
             required
           />
@@ -116,9 +116,9 @@
         </div>
         <div class="form-group">
           <div class="column">
-            <legend class="col-form-label row-sm-2 pt-0">
+            <label class="col-form-label row-sm-2 pt-0">
               Do you faced any issues when using our weather services?
-            </legend>
+            </label>
             <div class="row-sm-10">
               <div class="form-check">
                 <input
@@ -145,16 +145,16 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect2"
+          <label for="exampleFormControlSelect3"
             >If yes, where are you having issues on? (Skip this question if you
             answered no.)</label
           >
-          <select multiple class="form-control" id="exampleFormControlSelect2">
+          <select multiple class="form-control" id="exampleFormControlSelect3">
             <option>Mobile</option>
             <option>Desktop</option>
             <option>Location Services</option>
             <option>Weather Services</option>
-            <option>Search bar (search for specific locaiton)</option>
+            <option>Search bar (search for specific location)</option>
           </select>
         </div>
 
@@ -171,13 +171,13 @@
         </div>
 
         <div class="form-group">
-          <label for="exampleFormControlTextarea1"
+          <label for="exampleFormControlTextarea2"
             >Any comments? (e.g. issues with the weather services, suggestion,
             etc)</label
           >
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="exampleFormControlTextarea2"
             rows="3"
           ></textarea>
           <input class="btn btn-primary formbtn" type="submit" value="Submit" />

@@ -23,6 +23,12 @@
 .bg1 {
   background-color: #00eeff;
 }
+.bgheader {
+  background-color: #00eeff;
+  text-align: center;
+  padding: 20px;
+}
+
 .col-sm-12 {
   padding: 10px;
   background-color: #00eeff;
