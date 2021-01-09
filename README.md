@@ -28,7 +28,6 @@ Wireframe Created - https://xd.adobe.com/view/efe3a48e-a2da-489a-8694-d552fae861
 
 
 <h2>Technologies Used</h2>
-<br>
 <a href="https://www.w3schools.com/html/">HTML - W3Schools</a>
 <br>
 <a href="https://www.w3schools.com/css/">CSS - W3Schools</a>
