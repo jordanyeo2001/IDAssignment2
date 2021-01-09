@@ -1,8 +1,8 @@
 # IDAssignment2
-**Note**: This app uses an limited trial api from Accuweather. If no data is shown on the website, it means that the api have exceeded its limit. In order for it to work again, the api key have to be renew and change.
+**Note**: This app uses an limited trial api from Accuweather. If no weather data is shown on the website, it means that the api have exceeded its limit. In order for it to work again, the api key have to be renew and change.
 <br>
 <br>
-If data does not change or not shown, you have to clear your browser cache or just use incognito mode for it to work properly.
+If weather data does not change or not shown, you have to clear your browser cache or just use incognito mode for it to work properly.
 <h1>Weather Conditions</h1>
 For this project, i have chosen to do a weather condition website. This website will allow users to get the weather conditions of any location in Singapore. Users can either use their current location or enter a specific location. Furthermore, users can also get a 1 day forecast of a location and the weather condition of a location for an activity.
 <br>
