@@ -360,6 +360,15 @@ template {
 .activityspace2 {
   padding: 20px;
 }
+
+.allbg {
+  background-image: url("img/cloudimage.jpg");
+}
+.formbg {
+  background-color: #ccfcff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .bg {
   background-color: #00ff88;
 }
