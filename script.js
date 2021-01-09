@@ -777,6 +777,7 @@ function formsubmit() {
   alert(
     "You have successfully submitted the form. Thank you for contacting us."
   );
+  window.location.href = "contact.html";
 }
 document.addEventListener("submit", function (event) {
   //prevent default action of the form from actually submitting
