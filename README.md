@@ -106,7 +106,14 @@ Trouble linking the search bar with api and showing the data on the website.(Sol
 <br>
 Unable to link different api together. (Solved)
 
-
+<h2>API Used</h2>
+Current Condition API - Accuweather
+<br>
+Locations API- Accuweather
+<br>
+Forecast API - Accuweather
+<br>
+Indices API - Accuweather
 
 
 <h2>Credits</h2>
