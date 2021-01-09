@@ -49,6 +49,7 @@ This feature is to show a small animation of the button the user is hovering.
 
 <h2>Features Left to Implement</h2>
 A form that send information to email.
+<br>
 Background image change based on the weather.
 
 <h2>Technologies Used</h2>
@@ -74,8 +75,11 @@ The project uses JQuery and Javascript to simplify the DOM manipulation.
 
 <h3>Contact form</h3>
 Click on the contact button at the naviagation bar.
+<br>
 When submitting an empty form and an error message will show the required fields that is needed.
+<br>
 When submitting the form with an invalid email address and a relevant error message appears to tell you that the email format is incorrect.
+<br>
 When submitting the form with all inputs valid and a message appears which tells you that you have successfully submitted the form.
 
 <h3>The Website uses a responsive contents/page.</h3>
