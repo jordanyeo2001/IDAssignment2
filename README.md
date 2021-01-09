@@ -72,6 +72,11 @@ The project uses JQuery and Javascript to simplify the DOM manipulation.
 
 <h2>Testing</h2>
 
+<h3>Contact form</h3>
+Click on the contact button at the naviagation bar.
+When submitting an empty form and an error message will show the required fields that is needed.
+When submitting the form with an invalid email address and a relevant error message appears to tell you that the email format is incorrect.
+When submitting the form with all inputs valid and a message appears which tells you that you have successfully submitted the form.
 
 <h3>The Website uses a responsive contents/page.</h3>
 When using a mobile device such as IphoneX, the screensize will be resize depending on the device size.
@@ -90,7 +95,7 @@ There is a search bar at the right and when a location is entered and the search
 <br>
 Furthermore, for mobile version, it wil show a dropdown menu with all the buttons and the search bar instead.
 
-<h4>Problems discovered during testing</h4>    
+<h3>Problems discovered during testing</h3>    
 Form was not able to send to my email.
 <br>
 Trouble linking the search bar with api and showing the data on the website.(Solved)
