@@ -128,6 +128,6 @@ The photos used for the weather icon is obtained from <a href="https://apidev.ac
 <h2>Screenshots of website</h2>
 
 <h3>Desktop Version</h3>
-![Home Page](website_screenshots/Desktop_Home_page.jpg)
+![Home Page](/website_screenshots/desktop_version/Desktop_Home_Page.jpg)
 <h3>Mobile Version</h3>
 
