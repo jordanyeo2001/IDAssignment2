@@ -124,12 +124,3 @@ I have used <a href="https://developer.accuweather.com/apis">Accuweather Api</a>
 <h3>Media</h3>
 The photos used for the weather icon is obtained from <a href="https://apidev.accuweather.com/developers/weatherIcons">Accuweather</a>.
 
-
-<h2>Screenshots of website</h2>
-
-<h3>Desktop Version</h3>
-
-![Home Page](https://github.com/jordanyeo2001/IDAssignment2/blob/main/website_screenshots/desktop_version/Desktop_Home_Page.jpg)
-
-<h3>Mobile Version</h3>
-
