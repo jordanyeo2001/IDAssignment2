@@ -124,3 +124,18 @@ I have used <a href="https://developer.accuweather.com/apis">Accuweather Api</a>
 <h3>Media</h3>
 The photos used for the weather icon is obtained from <a href="https://apidev.accuweather.com/developers/weatherIcons">Accuweather</a>.
 
+<h2>Screenshots of Website</h2>
+
+<h3>Desktop Version</h3>
+<img src="website_screenshots/desktop_version/Desktop_Home_Page.jpg">
+<img src="website_screenshots/desktop_version/Desktop_Location_Page.jpg">
+<img src="website_screenshots/desktop_version/Desktop_Location_page%202.jpg">
+<img src="website_screenshots/desktop_version/Desktop_Activities_Page.jpg">
+<img src="website_screenshots/desktop_version/Desktop_Contact_Page.jpg">
+<h3>Mobile Version</h3>
+<img src="website_screenshots/mobile_version/Mobile_Home_Page.jpg">
+<img src="website_screenshots/mobile_version/Mobile_Location_Page%20.jpg">
+<img src="website_screenshots/mobile_version/Mobile_Location_Page%202.jpg">
+<img src="website_screenshots/mobile_version/Mobile_Activities_Page.jpg">
+<img src="website_screenshots/mobile_version/Mobile_Contact_Page.jpg">
+<img src="website_screenshots/mobile_version/Mobile_Dropdown_Menu.jpg">
